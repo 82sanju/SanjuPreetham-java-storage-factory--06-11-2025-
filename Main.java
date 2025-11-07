@@ -42,7 +42,7 @@ public class Main {
 
             try {
                 switch (opt) {
-                    // ✅ CREATE
+                    //CREATE
                     case "1":
                         System.out.print("Enter title: ");
                         String title = sc.nextLine();
@@ -53,7 +53,7 @@ public class Main {
                         System.out.println("✅ TODO created successfully! ID: " + todo.getId());
                         break;
 
-                    // ✅ RETRIEVE
+                    // RETRIEVE
                     case "2":
                         System.out.print("Enter TODO ID: ");
                         int rid = Integer.parseInt(sc.nextLine());
@@ -65,7 +65,7 @@ public class Main {
                         }
                         break;
 
-                    // ✅ UPDATE
+                    // UPDATE
                     case "3":
                         System.out.print("Enter TODO ID to update: ");
                         int uid = Integer.parseInt(sc.nextLine());
@@ -91,7 +91,7 @@ public class Main {
                         System.out.println("✅ TODO updated successfully!");
                         break;
 
-                    // ✅ DELETE
+                    // DELETE
                     case "4":
                         System.out.print("Enter TODO ID to delete: ");
                         int did = Integer.parseInt(sc.nextLine());
@@ -99,7 +99,7 @@ public class Main {
                         System.out.println("🗑️ TODO deleted (if it existed).");
                         break;
 
-                    // ✅ LIST ALL
+                    // LIST ALL
                     case "5":
                         List<Todo> all = service.getAll();
                         if (all.isEmpty()) {
@@ -110,7 +110,7 @@ public class Main {
                         }
                         break;
 
-                    // ✅ LIST INCOMPLETE
+                    //  LIST INCOMPLETE
                     case "6":
                         List<Todo> list = service.getAll();
                         List<Todo> incomplete = list.stream()
@@ -124,7 +124,7 @@ public class Main {
                         }
                         break;
 
-                    // ✅ EXIT
+                    //  EXIT
                     case "7":
                         System.out.println("👋 Goodbye!");
                         System.exit(0);
