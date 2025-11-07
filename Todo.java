@@ -7,7 +7,7 @@ public class Todo {
     // Default constructor
     public Todo() {}
 
-    // Constructor without ID (used when creating new TODOs)
+    // Constructor
     public Todo(String title, String description, boolean completed) {
         this.title = title;
         this.description = description;
@@ -43,3 +43,4 @@ public class Todo {
         );
     }
 }
+
