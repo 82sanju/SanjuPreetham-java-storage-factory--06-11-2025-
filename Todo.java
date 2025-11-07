@@ -14,7 +14,7 @@ public class Todo {
         this.completed = completed;
     }
 
-    // Constructor with ID (used when reading from DB)
+    // Constructor with ID
     public Todo(int id, String title, String description, boolean completed) {
         this.id = id;
         this.title = title;
@@ -43,4 +43,5 @@ public class Todo {
         );
     }
 }
+
 
